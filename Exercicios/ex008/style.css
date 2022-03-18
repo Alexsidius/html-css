@@ -1,0 +1,45 @@
+@charset "UFT-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*
+    
+    Em html é ID = em CSS é # (elemento unico)
+    Em html é class = em css é . (varios elementos podem herdar a classe)
+    */
+    
+}
+body{
+    text-align: justify;
+    background-image: linear-gradient(to right, #f9c58d, #f492f0);
+
+    /*shorth and de font (lista de parametros simplificado)
+    ordem: (font-style, font-weight, font size, font family) 
+    */
+    /*font: italic bolder 1em 'work Sans', sans-sherif;*/
+
+}
+main{
+    background-color: white;
+    border-radius: 10px; /*bordas arredondadas */
+    box-shadow: 5px 5px 7px #325c92d2;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: #2f578b;
+    text-align: center;
+    
+    text-shadow: 1px 1px 2px #3475cad0;
+}
+
+h2 {
+    color: #4d8ee2;
+    text-indent: 25px; /*recuo no comeco do paragrafo. texto */
+
+}
+
+p{
+    text-align: justify;
+}

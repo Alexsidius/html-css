@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hieraquias de de titulos</title>
+</head>
+<body>
+    <!--aqui os exemplos de hiearquia-->
+    <h1>Titulo página principal
+       <h2> <p><a href="pagina 2.html" rel="next">ir para segunda página</a> </p></h2>
+       <h2><a href="noticias/pagina 3.html" rel="next">ir para página 3</a></h2>
+    </h1>
+    <h2>Titulo secundário
+        <h3>
+            <h4>
+                <h5>
+                    <h6></h6><!--vai de H1 até H6-->
+                </h5>
+            </h4>
+        </h3>
+    </h2>
+
+    <!--Para negrito se usa <Strong< e para italico se usa <em> -->
+        <!--para criar paragrafos aleatórios usa-se a palavra lorem e aperta enter-->
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugiat <em>sequi dolorum</em> rem qui tempora consectetur <strong>illo libero reiciendis</strong> ullam, beatae ipsa ipsum iure enim quaerat cum quasi ex tempore?</h2>
+    <p>Paragrafo 1</p>
+    <h2>
+        <p>texto superscrito: x<sup>20</sup>+30</p>
+        <p>texto subescrito: h<sub>2</sub>o</p>
+    </h2>
+    <h2>
+        <!--abaixo exemplo de uso da <pre> para manter na pagina mesmos recuos e quebras de linha do texto no html-->
+         <pre>
+             <code> <!--este <code) é para facilitar leitura de codigos, reserva o mesmo espaço para cada caracter-->
+                 If(x= 2) then
+                 { 
+                     asdfsdafsadfasdf
+                     asdfsdafsadfasdfasdf
+                     asdfasdf
+
+                 }
+
+
+             </code>
+         </pre>   
+    </h2>
+
+    <h2>trabalhando com Listas ordenadas
+        <ol type= "A"> <!--pode ser type: 1, A, a, I, i-->
+            <li>amor</li>
+            <li>sensibilidade</li>
+            <li>sentimentos</li>
+            <li>atitudes</li>
+        </ol>
+    </h2>
+    <p></p>
+
+    <h2>trabalhando com lista não ordenadas
+    <ul type="square"> <!--pode ser type: circle, square e disc(padrão)-->
+        <li>Pão</li>
+        <li>cebola</li>
+        <li>tomate</li>
+        <li>coentro</li>
+    </ul>
+
+    </h2>
+    <h2>
+        <dl> <!--lista de definições-->
+            <dt>html <!--termo-->
+                <dd>Linguagem de marcação para criação de conteúdo em sites</dd> <!--definição-->
+            </dt>
+        </dl>
+    </h2>
+    <h2>Exemplos para links externos
+        <h3>Acessar youtube: <a href="https://www.youtube.com/" target="_blank"> clique aqui</a>
+
+        </h3>
+    </h2>
+    <h1><!--exemplo de como escolher 3 imagens para redimensionar de acordo com o tamanho ta tela-->
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagem-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagem-m.png" type="image/png">
+            <source media="(max-width: 750px)" srcset="imagem.png" type="image/png">
+            <img src="imagem-g" alt="imagem flexivel">
+
+        </picture>
+    </h1>
+
+
+    
+</body>
+</html>
