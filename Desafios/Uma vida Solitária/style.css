@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif; /*usada em cabeçario rodapé */
+    --fonte2: 'Passion One', 'cursive'; /*usada em titulos rodapé */
+    --fonte3: 'Sriracha', 'cursive'; /*usada em conteúdo */
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    
+}
+header{
+    background-color: black;
+    background-image: linear-gradient(to right, black, #DD6031);
+    text-align: center;
+    color: white;
+    
+}
+header > h1{
+    padding-top: 35px;
+    font-variant: small-caps;
+    padding-bottom: 35px;
+    font-family: var(--fonte2);
+    font-size: 4vw;
+}
+
+a{
+    color: rgb(123, 186, 216);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px; 
+    font-family: var(--fonte3);
+    font-size: 1.5vw;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    /*background-attachment: fixed;*/
+    
+    box-shadow: 6px 6px 13px 0px black;
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.418);
+    text-shadow: 1px 1px 0px black;
+    
+}
+section#img1{
+    background-image: url(imagens/bkg1.jpg);
+    background-size: cover;
+}
+section#img2{
+    background-image: url(imagens/cruz1.jpg);
+    background-size: cover;
+}
+section P{
+    max-width: 600px;
+    text-align: justify;
+    padding: 15px;
+}
+section.imagem > p{
+    background-position: right center;
+    
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    
+}
+footer > a{
+    text-decoration: none;
+}

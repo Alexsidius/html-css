@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        div.quadrado{
+            display: inline-block; /*torna a div elemento que nao ocupa a linha inteira (muda de   box-level para inline-level)*/
+            border: 1.5px solid black;
+            border-radius: 10px;
+            background-color: aquamarine;
+            width: 300px;
+            height: 300px;
+            
+        }
+        div#q1{
+            background-color:skyblue;
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+        div#q3{
+            background-image: url("imagens/wallpaper001.jpg");
+        }
+        body{
+            background-image: url(imagens/wallpaper002.jpg);
+            /*background-size: 100px 100px; */
+            background-repeat: no-repeat; 
+            background-size: cover; /*melhor maneira de fazer a imagem cobrir todo o fundo do site sem distorcer ou ficar parte fora*/
+            background-attachment: fixed; /*deixa a imagem de fundo fixa mesmo se houvr rolagem prabaixo*/
+
+            /*formas de posicionar a imagem dentro de uma div
+                backgroud-position: right bottom;
+                backgroud-position: left center;
+                backgroud-position: center center;
+                backgroud-position: left top;
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    
+</body>
+</html>
